@@ -3,11 +3,12 @@ import { Link } from "expo-router";
 import { ScrollView } from "react-native";
 import { StyleSheet } from "react-native-unistyles";
 
-export default function PlaylistHome() {
+export default function SettingsHome() {
   return (
-    <ScrollView style={styles.container}>
-      <ThemedText>Home Screen</ThemedText>
-      <Link href="/settings">Settings</Link>
+    <ScrollView contentContainerStyle={styles.container}>
+      <ThemedText type="title">Settings Home</ThemedText>
+      <Link href="/settings/settings-accent">Accent</Link>
+      <Link href="/settings/settings-theme">Theme</Link>
     </ScrollView>
   );
 }

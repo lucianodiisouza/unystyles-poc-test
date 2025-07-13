@@ -1,13 +1,11 @@
 import { ThemedText } from "@/components/ThemedText";
-import { Link } from "expo-router";
 import { ScrollView } from "react-native";
 import { StyleSheet } from "react-native-unistyles";
 
-export default function PlaylistHome() {
+export default function SettingsAccent() {
   return (
-    <ScrollView style={styles.container}>
-      <ThemedText>Home Screen</ThemedText>
-      <Link href="/settings">Settings</Link>
+    <ScrollView contentContainerStyle={styles.container}>
+      <ThemedText type="title">Change Accent</ThemedText>
     </ScrollView>
   );
 }
