@@ -32,5 +32,6 @@ const styles = StyleSheet.create(() => ({
     alignItems: "center",
     justifyContent: "space-between",
     opacity: state.pressed ? 0.75 : 1,
+    paddingVertical: 8,
   }),
 }));

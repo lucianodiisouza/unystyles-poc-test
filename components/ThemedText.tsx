@@ -16,7 +16,7 @@ export function ThemedText({
 }: ThemedTextProps) {
   styles.useVariants({ type, bold, dimmed });
 
-  return <Text style={[styles.textType, styles.textColor, style]} {...rest} />;
+  return <Text style={[styles.textColor, styles.textType, style]} {...rest} />;
 }
 
 const styles = StyleSheet.create((theme) => ({

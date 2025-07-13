@@ -40,7 +40,7 @@ const styles = StyleSheet.create((theme, rt) => ({
     paddingHorizontal: theme.gap(2),
   },
   settingsContainer: {
-    marginTop: rt.insets.top,
-    padding: theme.gap(2),
+    marginTop: theme.gap(4),
+    padding: theme.gap(0),
   },
 }));
