@@ -8,7 +8,8 @@ import { StyleSheet, useUnistyles } from "react-native-unistyles";
 export default function SettingsAccent() {
   const { theme } = useUnistyles();
   const allAccents = theme.colors.accents;
-  const [selectedAccent, setSelectedAccent] = useState("banana");
+  const [selectedAccent, setSelectedAccent] =
+    useState<keyof typeof theme.colors.accents>("banana");
 
   return (
     <View style={styles.container}>
