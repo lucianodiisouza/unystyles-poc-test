@@ -1,10 +1,12 @@
+import { useStore } from "@/store";
 import { Pressable, View } from "react-native";
 import { StyleSheet, useUnistyles } from "react-native-unistyles";
 import { IconSymbol } from "./ui/IconSymbol";
 
 export const PlayerControls = () => {
+  const { preferredAccent } = useStore();
   const { theme } = useUnistyles();
-  const accent = theme.colors.accents["banana"];
+  const accent = theme.colors.accents[preferredAccent];
 
   return (
     <View style={styles.actions}>

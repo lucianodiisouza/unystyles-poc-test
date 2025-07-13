@@ -1,5 +1,6 @@
 import { Button } from "@/components/Button";
 import { ThemedText } from "@/components/ThemedText";
+import { useStore } from "@/store";
 import { router } from "expo-router";
 import { useState } from "react";
 import { Pressable, ScrollView, View } from "react-native";
@@ -7,9 +8,10 @@ import { StyleSheet, useUnistyles } from "react-native-unistyles";
 
 export default function SettingsAccent() {
   const { theme } = useUnistyles();
+  const { setPreferredAccent, preferredAccent } = useStore();
   const allAccents = theme.colors.accents;
   const [selectedAccent, setSelectedAccent] =
-    useState<keyof typeof theme.colors.accents>("banana");
+    useState<keyof typeof theme.colors.accents>(preferredAccent);
 
   return (
     <View style={styles.container}>
@@ -34,7 +36,10 @@ export default function SettingsAccent() {
       <View style={styles.buttonContainer}>
         <Button
           label="Save"
-          onPress={() => router.back()}
+          onPress={() => {
+            setSelectedAccent(selectedAccent);
+            router.back();
+          }}
           accent={selectedAccent}
         />
       </View>

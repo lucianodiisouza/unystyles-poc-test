@@ -1,3 +1,4 @@
+import { useStore } from "@/store";
 import { Pressable } from "react-native";
 import Animated, {
   useAnimatedStyle,
@@ -17,8 +18,9 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
   accent,
   onPress,
 }) => {
+  const { preferredAccent } = useStore();
   style.useVariants({
-    accent: accent,
+    accent: accent ?? preferredAccent,
   });
 
   const color = useAnimatedVariantColor(style.buttonColor, "backgroundColor");

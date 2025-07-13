@@ -16,11 +16,7 @@ export default function PlayerScreen() {
       <ThemedView style={[styles.centerContainer, styles.container]}>
         <ThemedText type="title">Looking for inspiration?</ThemedText>
         <ThemedText>Pick a song from the playlist</ThemedText>
-        <Button
-          label="Pick a song"
-          accent="banana"
-          onPress={() => router.replace("/")}
-        />
+        <Button label="Pick a song" onPress={() => router.replace("/")} />
       </ThemedView>
     );
   }
