@@ -24,18 +24,22 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: "Playlist",
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="house.fill" color={color} />
+            <IconSymbol size={24} name="music.house" color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="player/[songId]"
         options={{
-          title: "Explore",
+          title: "Player",
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="paperplane.fill" color={color} />
+            <IconSymbol
+              size={24}
+              name="play.rectangle.on.rectangle.circle"
+              color={color}
+            />
           ),
         }}
       />

@@ -12,14 +12,14 @@ export default function SettingsLayout() {
       }}
     >
       <Stack.Screen
-        name="/index"
+        name="index"
         options={{
-          title: "Home",
+          title: "Settings",
           headerShown: false,
         }}
       />
       <Stack.Screen
-        name="/settings-theme"
+        name="settings-theme"
         options={{
           title: "Change theme",
           presentation: "modal",
@@ -27,7 +27,7 @@ export default function SettingsLayout() {
         }}
       />
       <Stack.Screen
-        name="/settings-accent"
+        name="settings-accent"
         options={{
           title: "Change accent",
           presentation: "modal",

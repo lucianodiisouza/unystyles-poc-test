@@ -2,13 +2,13 @@ import { ThemedText } from "@/components/ThemedText";
 import { ScrollView } from "react-native";
 import { StyleSheet } from "react-native-unistyles";
 
-export const PlayerScreen = () => {
+export default function PlayerScreen() {
   return (
     <ScrollView style={styles.container}>
-      <ThemedText></ThemedText>
+      <ThemedText type="title">Player</ThemedText>
     </ScrollView>
   );
-};
+}
 
 const styles = StyleSheet.create((theme, rt) => ({
   container: {

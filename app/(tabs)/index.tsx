@@ -1,13 +1,11 @@
 import { ThemedText } from "@/components/ThemedText";
-import { Link } from "expo-router";
 import { ScrollView } from "react-native";
 import { StyleSheet } from "react-native-unistyles";
 
 export default function PlaylistHome() {
   return (
     <ScrollView style={styles.container}>
-      <ThemedText>Home Screen</ThemedText>
-      <Link href="/settings">Settings</Link>
+      <ThemedText type="title">Home Screen</ThemedText>
     </ScrollView>
   );
 }
