@@ -1,5 +1,6 @@
 import { SettingTile } from "@/components/SettingTile";
 import { ThemedText } from "@/components/ThemedText";
+import { router } from "expo-router";
 import { ScrollView, View } from "react-native";
 import {
   StyleSheet,
@@ -19,13 +20,13 @@ export default function SettingsHome() {
           settingName="Theme"
           selectedValue="Light"
           description={systemTheme ? "System" : "User"}
-          onPress={() => {}}
+          onPress={() => router.push("/(tabs)/settings/settings-theme")}
         />
         <SettingTile
           settingName="App accent"
           selectedValue="Default"
           description="Primary app color"
-          onPress={() => {}}
+          onPress={() => router.push("/(tabs)/settings/settings-accent")}
         />
       </View>
     </StyledScrollview>
