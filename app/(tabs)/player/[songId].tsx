@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button";
+import { PlayerControls } from "@/components/PlayerControls";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { playlist } from "@/mocks";
@@ -30,7 +31,7 @@ export default function PlayerScreen() {
       <ThemedText type="subtitle" dimmed>
         {song.genre}
       </ThemedText>
-      {/* <PlayerControls /> */}
+      <PlayerControls />
     </ScrollView>
   );
 }
