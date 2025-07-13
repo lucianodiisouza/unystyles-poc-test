@@ -1,7 +1,7 @@
 import { Pressable } from "react-native";
 import Animated, {
-    useAnimatedStyle,
-    withTiming,
+  useAnimatedStyle,
+  withTiming,
 } from "react-native-reanimated";
 import { StyleSheet, UnistylesVariants } from "react-native-unistyles";
 import { useAnimatedVariantColor } from "react-native-unistyles/reanimated";
