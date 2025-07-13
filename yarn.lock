@@ -5490,6 +5490,11 @@ react-native-is-edge-to-edge@^1.1.6, react-native-is-edge-to-edge@^1.1.7:
   resolved "https://registry.yarnpkg.com/react-native-is-edge-to-edge/-/react-native-is-edge-to-edge-1.2.1.tgz#64e10851abd9d176cbf2b40562f751622bde3358"
   integrity sha512-FLbPWl/MyYQWz+KwqOZsSyj2JmLKglHatd3xLZWskXOpRaio4LfEDEz8E/A6uD8QoTHW6Aobw1jbEwK7KMgR7Q==
 
+react-native-mmkv@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-mmkv/-/react-native-mmkv-3.3.0.tgz#a0816babdf68afd2bfd881a48e28c8815795286b"
+  integrity sha512-2iPjIJ+IAODXN35wm53EN6nv+hR/0NXLLiLWOdPA/0gXDB2dYVrr6MqvoiFpxhLhdj0B8fkf5ARNVavJaSvuuQ==
+
 react-native-nitro-modules@^0.26.3:
   version "0.26.3"
   resolved "https://registry.yarnpkg.com/react-native-nitro-modules/-/react-native-nitro-modules-0.26.3.tgz#80d7d01fe1b9f657182f5b886f74ac37e185423d"
@@ -6105,6 +6110,11 @@ stacktrace-parser@^0.1.10:
   integrity sha512-WjlahMgHmCJpqzU8bIBy4qtsZdU9lRlcZE3Lvyej6t4tuOuv1vk57OW3MBrj6hXBFx/nNoC9MPMTcr5YA7NQbg==
   dependencies:
     type-fest "^0.7.1"
+
+stan-js@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/stan-js/-/stan-js-1.7.0.tgz#518889443c8fe308da93bf9fd37c1f889eb0e8d7"
+  integrity sha512-Yjl7AEeFKQvgtmjnWTSI37uzdivjtgJ46Ac0aG77xsYiJwYcUoZH2q9xEtaRpm1hmRxmQpy8rN0dcqBoq9jjBA==
 
 statuses@2.0.1:
   version "2.0.1"
