@@ -1,20 +1,19 @@
-import {StyleSheet} from 'react-native-unistyles'
-import {ThemedView} from "@/components/ThemedView";
-import {ThemedText} from "@/components/ThemedText";
+import { ThemedText } from "@/components/ThemedText";
+import { ScrollView } from "react-native";
+import { StyleSheet } from "react-native-unistyles";
 
-
-export default function HomeScreen() {
-    return (
-        <ThemedView style={styles.container}>
-            <ThemedText>Home Screen</ThemedText>
-        </ThemedView>
-    );
+export default function PlaylistHome() {
+  return (
+    <ScrollView style={styles.container}>
+      <ThemedText>Home Screen</ThemedText>
+    </ScrollView>
+  );
 }
 
-const styles = StyleSheet.create(theme => ({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-    }
+const styles = StyleSheet.create((theme, rt) => ({
+  container: {
+    flex: 1,
+    marginTop: rt.insets.top,
+    padding: theme.gap(2),
+  },
 }));
